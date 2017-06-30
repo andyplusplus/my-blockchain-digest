@@ -32,3 +32,22 @@ geth --targetgaslimit 4294967295 --rpc --rpcaddr "192.168.73.132" --rpcport "810
 
 ethwallet
 	miner.stop()
+	miner.start(1)
+	
+	
+	contract SimpleStorage {
+		uint storedData;
+		function set(uint x) {
+			storedData = x;
+		}
+
+		function get() constant returns (uint retVal) {
+			return storedData;
+		}
+	}
+	
+	ABI:
+		0x1fB0186cAbE6D94a5a925c8eF9f84845FF47a388
+		[ { "constant": false, "inputs": [ { "name": "x", "type": "uint256" } ], "name": "set", "outputs": [], "type": "function" }, { "constant": true, "inputs": [], "name": "get", "outputs": [ { "name": "retVal", "type": "uint256", "value": "1234" } ], "type": "function" } ]
+	
+	
