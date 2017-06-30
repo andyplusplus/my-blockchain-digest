@@ -11,7 +11,6 @@ awesome blockchain resources
 * [区块链开发（零）如何开始学习以太坊及区块链](http://blog.csdn.net/sportshark/article/details/52351415)
 * [区块链开发（一）搭建基于以太坊的私有链环境](http://blog.csdn.net/sportshark/article/details/51855007)
 * [区块链开发（二）部署并运行第一个以太坊智能合约](http://blog.csdn.net/sportshark/article/details/52249607)
-* [区块链开发（三）部署和运行第一个以太坊智能合约](http://blog.csdn.net/sportshark/article/details/52249607)
 * [区块链开发（三）编写调试第一个以太坊智能合约](http://blog.csdn.net/sportshark/article/details/52497176)
 * [区块链开发（四）区块链技术详解PPT](http://blog.csdn.net/sportshark/article/details/53196087)
 * [区块链开发（五）区块链ICO：互联网进化的驱动力](http://blog.csdn.net/sportshark/article/details/52754821)
