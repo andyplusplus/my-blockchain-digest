@@ -1,0 +1,33 @@
+Accounts:
+	123.abc
+	1234
+
+geth --datadir "D:\blockchain" init genesis.json
+geth --datadir "%cd%\chain" init genesis.json
+	>> successfully wrote genesis block and/or chain rule set: 6e92f8b23bcdfdf34dc813cfaf1d84b71beac80530506b5d63a2df10fe23a660
+geth --datadir "%cd%\chain" console
+personal.newAccount('123.abc') 
+	>> "0xb1b70eb831fcd58249273f959a633feb11c97016"
+
+geth --targetgaslimit 4294967295 --rpc --rpcaddr "192.168.73.132" --rpcport "8101" --port "30301" --rpcapi "eth,web3,personal" --networkid 2016 --identity 2016 --nodiscover --maxpeers 5 --datadir "%cd%\chain" --unlock 0 --rpccorsdomain "*" --mine console
+	
+	--nodiscover --maxpeers 5 --datadir "%cd%\chain" --unlock 0 --rpccorsdomain "*" --mine console
+
+	targetgaslimit –每个块的gas上限，这里可以暂时理解为容量 
+	rpc –启动rpc通信，可以进行智能合约的部署和调试 
+	rpcaddr –rpc接口的地址 
+	rpcport –rpc接口的端口号 
+	port –网络监听端口，用于节点之间通信 
+	rpcapi –设置rpc的范围，暂时开启eth,web3,personal足够 
+	networkid –设置当前区块链的网络ID，是一个数字，可以随便写 
+	identity –区块链的标示，随便填写，用于标示目前网络的名字 
+	nodiscover 禁止被网络中其它节点发现，需要手动添加该节点到网络 
+	maxpeers 最大节点数量 
+	datadir –设置当前区块链网络数据存放的位置 
+	unlock –解锁某用户（此处用用户坐标来控制，解锁后的用户调用接口发起交易时，不要需要提供密码） 
+	rpccorsdomain 限制rpc访问源的ip，代表不限制 
+	mine 允许挖矿 
+	console –启动命令行模式，可以在Geth中执行命令*
+
+ethwallet
+	miner.stop()
