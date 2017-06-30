@@ -2,8 +2,10 @@
 awesome blockchain resources
 
 # Related Resources
-* [区块链的图谱](http://lib.csdn.net/xmt1139057136/62867/chart/%E5%8C%BA%E5%9D%97%E9%93%BE)
+* [区块链的图谱 animation :)  :)](http://lib.csdn.net/xmt1139057136/62867/chart/%E5%8C%BA%E5%9D%97%E9%93%BE)
 * [以太坊 链私有链环境搭建（windows）](http://blog.csdn.net/u014409380/article/details/53522581) --> done
+* []()
+* []()
 
 # 区块链开发
 * [区块链开发（零）如何开始学习以太坊及区块链](http://blog.csdn.net/sportshark/article/details/52351415)
@@ -24,14 +26,33 @@ awesome blockchain resources
 * [以太坊平台评估 私有链和联盟链的机会与挑战](http://blog.csdn.net/sportshark/article/details/52016725)
 * []()
 * []()
-* []()
-* []()
-* []()
-* []()
-* []()
+
+
+# 其它摘要
+* [公有链和私有链有什么区别](http://blog.sina.com.cn/s/blog_4ebdf17e0102wkxr.html)
 
 # Other resources
-* [Make your own Cryptocurrency - based on litecoin](youtube links)
+* [Make your own Cryptocurrency - based on litecoin](https://www.youtube.com/watch?v=86jqAfySi64)
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
 * []()
 * []()
 * []()
