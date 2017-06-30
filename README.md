@@ -12,7 +12,7 @@ awesome blockchain resources
 * [区块链开发（一）搭建基于以太坊的私有链环境](http://blog.csdn.net/sportshark/article/details/51855007)
 * [区块链开发（二）部署并运行第一个以太坊智能合约](http://blog.csdn.net/sportshark/article/details/52249607)
 * [区块链开发（三）编写调试第一个以太坊智能合约](http://blog.csdn.net/sportshark/article/details/52497176)
-* [区块链开发（四）区块链技术详解PPT](http://blog.csdn.net/sportshark/article/details/53196087)
+* [区块链开发（四）区块链技术详解PPT](http://blog.csdn.net/sportshark/article/details/53196087)   [链接2](http://www.infocool.net/kb/OtherCloud/201611/227498.html)
 * [区块链开发（五）区块链ICO：互联网进化的驱动力](http://blog.csdn.net/sportshark/article/details/52754821)
 * [区块链开发（六）区块链架构与应用PPT](http://blog.csdn.net/sportshark/article/details/53364690)
 * [区块链开发（七）从某保险积分案例谈区块链应用的风险与挑战](http://blog.csdn.net/sportshark/article/details/53486151)

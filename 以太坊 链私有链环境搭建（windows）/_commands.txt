@@ -1,8 +1,15 @@
+
+
 Accounts:
 	123.abc
 	1234
 	abc
 
+	
+//-----------------------------------------------------------------------
+// 区块链开发（一）搭建基于以太坊的私有链环境
+//-----------------------------------------------------------------------
+	
 geth --datadir "D:\blockchain" init genesis.json
 geth --datadir "%cd%\chain" init genesis.json
 	>> successfully wrote genesis block and/or chain rule set: 6e92f8b23bcdfdf34dc813cfaf1d84b71beac80530506b5d63a2df10fe23a660
@@ -30,10 +37,14 @@ geth --targetgaslimit 4294967295 --rpc --rpcaddr "192.168.73.132" --rpcport "810
 	mine 允许挖矿 
 	console –启动命令行模式，可以在Geth中执行命令*
 
+
 ethwallet
 	miner.stop()
 	miner.start(1)
 	
+//-----------------------------------------------------------------------
+// 区块链开发（二）部署和运行第一个以太坊智能合约
+//-----------------------------------------------------------------------
 	
 	contract SimpleStorage {
 		uint storedData;
@@ -50,4 +61,38 @@ ethwallet
 		0x1fB0186cAbE6D94a5a925c8eF9f84845FF47a388
 		[ { "constant": false, "inputs": [ { "name": "x", "type": "uint256" } ], "name": "set", "outputs": [], "type": "function" }, { "constant": true, "inputs": [], "name": "get", "outputs": [ { "name": "retVal", "type": "uint256", "value": "1234" } ], "type": "function" } ]
 	
-	
+		
+//-----------------------------------------------------------------------
+// 区块链开发（三）编写调试第一个以太坊智能合约
+//-----------------------------------------------------------------------
+
+https://ethereum.github.io/browser-solidity/
+
+		contract Votelihe { 
+		   struct Candidate {
+			   uint votecount;
+			   string name;
+		   }
+
+		   struct Voter {
+			   bool voted;
+		   }
+
+		   mapping(address => Voter) public voters;
+		   Candidate[] public candidates;   
+
+		   function Votelihe() {
+			   candidates.push(Candidate({ name: "lihe", votecount: 0}));
+			   candidates.push(Candidate({name: "dandan", votecount: 0}));
+		   }   
+
+		   function Vote_candidate(uint8 numCandidate)  {
+			   if(voters[msg.sender].voted ||numCandidate>candidates.length)return;
+			   candidates[numCandidate].votecount+=1;
+			   voters[msg.sender].voted=true;
+		   }   
+
+		   function Getcount() returns(string,uint,string,uint){
+			   return(candidates[0].name,candidates[0].votecount,candidates[1].name,candidates[1].votecount);
+		   }
+		}
