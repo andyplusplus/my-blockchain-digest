@@ -1,11 +1,13 @@
-
+Notepad Accounts:
+	a   0x29967F04f67B16e8FD6D32633865C0A20fF5883E
+	b 	0x69d3F9a957c001c0158b0a74d139D648b2c51Ebb
+	c	0xfEED07f84A3896ce7aadbF47A34Bb1db967157f0
 
 Accounts:
 	123.abc
 	1234
 	abc
 
-	
 //-----------------------------------------------------------------------
 // 区块链开发（一）搭建基于以太坊的私有链环境
 //-----------------------------------------------------------------------
@@ -14,10 +16,12 @@ geth --datadir "D:\blockchain" init genesis.json
 geth --datadir "%cd%\chain" init genesis.json
 	>> successfully wrote genesis block and/or chain rule set: 6e92f8b23bcdfdf34dc813cfaf1d84b71beac80530506b5d63a2df10fe23a660
 geth --datadir "%cd%\chain" console
-personal.newAccount('123.abc') 
+personal.newAccount('123.abc')      personal.newAccount('a') 
 	>> "0xb1b70eb831fcd58249273f959a633feb11c97016"
 
+geth --targetgaslimit 4294967295 --rpc --rpcaddr "127.0.0.1"      --rpcport "8101" --port "30301" --rpcapi "eth,web3,personal" --networkid 2016 --identity 2016 --nodiscover --maxpeers 5 --datadir "%cd%\chain" --unlock 0 --rpccorsdomain "*" --mine console
 geth --targetgaslimit 4294967295 --rpc --rpcaddr "192.168.73.132" --rpcport "8101" --port "30301" --rpcapi "eth,web3,personal" --networkid 2016 --identity 2016 --nodiscover --maxpeers 5 --datadir "%cd%\chain" --unlock 0 --rpccorsdomain "*" --mine console
+
 	
 	--nodiscover --maxpeers 5 --datadir "%cd%\chain" --unlock 0 --rpccorsdomain "*" --mine console
 
