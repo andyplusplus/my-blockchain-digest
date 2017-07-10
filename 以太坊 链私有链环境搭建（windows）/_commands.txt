@@ -3,11 +3,15 @@ Notepad Accounts:
 	b 	0x69d3F9a957c001c0158b0a74d139D648b2c51Ebb
 	c	0xfEED07f84A3896ce7aadbF47A34Bb1db967157f0
 
-Accounts:
-	123.abc
-	1234
-	abc
+Desktop Accounts:
+	a	0x5BF30a4e0E004976979BA76f1D334fF1440b0700
+	b	0x84AB255577dD9038228f6978aF511556cd96d5bC
+	c	0xe1164983547bEAF11797B00fC03C24170D2fAc1A
+
+	SimpleStorage:  0x9A072500CA09713100BbB3875224b200f85355FD	
+					[ { "constant": false, "inputs": [ { "name": "x", "type": "uint256" } ], "name": "set", "outputs": [], "type": "function" }, { "constant": true, "inputs": [], "name": "get", "outputs": [ { "name": "retVal", "type": "uint256", "value": "100" } ], "type": "function" } ]
 	
+
 
 //-----------------------------------------------------------------------
 // 区块链开发（一）搭建基于以太坊的私有链环境
@@ -17,7 +21,7 @@ geth --datadir "D:\blockchain" init genesis.json
 geth --datadir "%cd%\chain" init genesis.json
 	>> successfully wrote genesis block and/or chain rule set: 6e92f8b23bcdfdf34dc813cfaf1d84b71beac80530506b5d63a2df10fe23a660
 geth --datadir "%cd%\chain" console
-personal.newAccount('123.abc')      personal.newAccount('a') 
+personal.newAccount('123.abc') 
 	>> "0xb1b70eb831fcd58249273f959a633feb11c97016"
 
 geth --targetgaslimit 4294967295 --rpc --rpcaddr "127.0.0.1"      --rpcport "8101" --port "30301" --rpcapi "eth,web3,personal" --networkid 2016 --identity 2016 --nodiscover --maxpeers 5 --datadir "%cd%\chain" --unlock 0 --rpccorsdomain "*" --mine console
